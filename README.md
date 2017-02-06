@@ -453,6 +453,8 @@ Gate: CLOSED
 - [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ## Quality Rubric
+- Used a linter to write clean code and there are no unnecessary comments or logs in the code (50 pts)
+- Function names reflect what they are doing and tests pass by running `npm run test` in terminal (50 pts)
 
 To get a proper self assessment:
 
