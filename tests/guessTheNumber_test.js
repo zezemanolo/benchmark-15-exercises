@@ -13,4 +13,12 @@ describe('guessTheNumber()', () => {
     const randomNum = Math.floor(Math.random() * 100)
     expect(guessTheNumber('')).to.equal('Insert only integers RAWR!!!')
   })
+  it('returns string if input < randomNum', () => {
+    const randomNum = Math.floor(Math.random() * 100)
+    expect(guessTheNumber(1)).to.equal('Your guess is kinda low')
+  })
+  it('returns string if input > randomNum', () => {
+    const randomNum = Math.floor(Math.random() * 100)
+    expect(guessTheNumber(100)).to.equal('You too high!!!')
+  })
 })
