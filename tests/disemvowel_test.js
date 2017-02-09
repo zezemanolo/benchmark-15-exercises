@@ -12,6 +12,6 @@ describe('disemvowel()', () => {
     expect(disemvowel('I LOVE REG EXPRESSIONS RAWRRR')).to.eql('lvrgxprssnsrwrrr')
   })
   it('also ignores special characters and numbers!', () => {
-    expect(disemvowel('!?!? Stupid, Dumb, and Hyphy! 510!!')).to.eql('stpddmbndhyphy')
+    expect(disemvowel('!?!? Wee*!!')).to.eql('!?!?w*!!')
   })
 })
