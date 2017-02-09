@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "babel src -d lib",
-    "test": "mocha --compilers js:babel-register ./tests/stringIndices_test.js"
+    "test": "mocha --compilers js:babel-register ./tests"
   },
   "keywords": [],
   "author": "",
