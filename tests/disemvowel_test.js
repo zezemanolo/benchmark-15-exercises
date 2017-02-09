@@ -6,15 +6,12 @@ describe('disemvowel()', () => {
     expect(disemvowel).to.be.a('function')
   })
   it('return string without vowels or spaces', () => {
-    const someString = 'cash me ousside'
-    expect(disemvowel(someString)).to.eql('cshmssd')
+    expect(disemvowel('cash me ousside')).to.eql('cshmssd')
   })
   it('case-sensitivity is not an issue', () => {
-    const someString = 'I LOVE REG EXPRESSIONS RAWRRR'
-    expect(disemvowel(someString)).to.eql('lvrgxprssnsrwrrr')
+    expect(disemvowel('I LOVE REG EXPRESSIONS RAWRRR')).to.eql('lvrgxprssnsrwrrr')
   })
   it('also ignores special characters and numbers!', () => {
-    const someString = '!?!? Stupid, Dumb, and Hyphy! 510!!'
-    expect(disemvowel(someString)).to.eql('stpddmbndhyphy')
+    expect(disemvowel('!?!? Stupid, Dumb, and Hyphy! 510!!')).to.eql('stpddmbndhyphy')
   })
 })
