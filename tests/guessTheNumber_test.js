@@ -1,4 +1,4 @@
-import chai, { expect } from 'chai'
+import { expect } from 'chai'
 import { guessTheNumber } from '../src/guessTheNumber.js'
 
 describe('guessTheNumber()', () => {

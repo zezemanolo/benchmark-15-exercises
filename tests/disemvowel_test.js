@@ -11,7 +11,7 @@ describe('disemvowel()', () => {
   it('case-sensitivity is not an issue', () => {
     expect(disemvowel('I LOVE REG EXPRESSIONS RAWRRR')).to.eql('lvrgxprssnsrwrrr')
   })
-  it('also ignores special characters and numbers!', () => {
-    expect(disemvowel('!?!? Wee*!!')).to.eql('!?!?w*!!')
+  it('it also filters out special characters and numbers!', () => {
+    expect(disemvowel('!?!?324 Wee*!!')).to.eql('w')
   })
 })

@@ -1,4 +1,4 @@
-const scramBag = (input) => {
+export const scramBag = (input) => {
   const bagOfTiles = {
   'A':9,
   'B':2,

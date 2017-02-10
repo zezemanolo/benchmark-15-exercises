@@ -1,3 +1,4 @@
-export const disemvowel = string => {
-  const stringFilter = string.toLowerCase().replace(/[aeiou]\s/g, '')
+export const disemvowel = (string) => {
+  const filteredString = string.toLowerCase().replace(/[aeiou]|\d|\W/g, '')
+  return filteredString
 }
