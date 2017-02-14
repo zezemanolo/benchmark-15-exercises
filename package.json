@@ -1,0 +1,24 @@
+{
+  "name": "week10",
+  "version": "1.0.0",
+  "description": "Benchmark Goal: 15 coding exercises",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "mocha --compilers js:babel-register ./tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.22.0",
+    "chai": "^3.5.0",
+    "chai-change": "^2.1.2",
+    "mocha": "^3.2.0"
+  }
+}
